@@ -10,18 +10,22 @@ html {
 }
 
 body {
-
+    background-image:
+        url('/img/bg-pattern.png'),
+        linear-gradient(to right, rgba(218, 36, 49, 1), rgba(122, 67, 151, 1));
 }
 
-h1, nav {
+h1,
+nav {
     font-family: 'Catamaran', 'Helvetica', 'Arial', sans-serif;
 }
 
-button, .menülink {
+button,
+.menülink {
     font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
 }
 
-.bekezdés {
+p {
     font-family: 'Mulish', 'Helvetica', 'Arial', sans-serif;
 }
 
@@ -31,10 +35,56 @@ footer {
 
 
 nav {
-    margin: 0 20%;
+    max-width: 85%;
 }
 
-.menuItems {
-    /* display: flex; */
-    /* justify-content: flex-end; */
+.menuItems {}
+
+.firstSection, .fourthSection {
+    font-family: 'Mulish', 'Helvetica', 'Arial', sans-serif;
+    font-size: 2rem;
+}
+
+.btnSpecial {
+    font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+    border-radius: 25px;
+    font-size: .7rem;
+}
+
+.imgResize {
+    width: 200px;
+}
+
+.secondSection {
+    background-color: rgb(254, 203, 78);
+}
+
+.liner {
+    letter-spacing: -3px;
+    color: rgb(221, 221, 221);
+    font-weight: bold;
+}
+
+.card {
+    border: 0;
+}
+
+.iconDesign {
+    font-size: 3.5rem;
+    background: -moz-linear-gradient(to right, rgba(218, 36, 49, 1), rgba(122, 67, 151, 1));
+    background: -webkit-linear-gradient(to right, rgba(218, 36, 49, 1), rgba(122, 67, 151, 1));
+    background: linear-gradient(to right, rgba(218, 36, 49, 1), rgba(122, 67, 151, 1));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.fourthSection {
+    /* background: rgba(0, 0, 0, 0.9); */
+    background-image:
+    linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+     url('/img/bg-cta.jpg');
+    background-position: center;
+    background-size: cover;
 }
