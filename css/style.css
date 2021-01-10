@@ -138,14 +138,14 @@ a:hover {
 }
 
 .btnSpecial:hover {
-    color: rgb(253, 204, 82);
     border-color: #fdcc52;
     background-color: transparent;
+    color: rgb(253, 204, 82);
 }
 
 .btnSpecial {
-    font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
     border-radius: 25px;
+    font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
     font-size: .7rem;
     transition: color .15s ease-in-out, border-color .15s ease-in-out;
     transition-property: color, border-color;
@@ -159,18 +159,18 @@ a:hover {
 }
 
 .imgContainer {
+    left: 0;
     position: relative;
     top: 0;
-    left: 0;
 }
 
 .img1 {
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 47%;
     border-radius: 5px;
+    left: 0;
+    top: 0;
+    position: relative;
+    width: 47%;
+    z-index: 2;
 }
 
 .img2 {
@@ -183,9 +183,9 @@ a:hover {
 }
 
 .liner {
-    letter-spacing: -3px;
     color: rgb(221, 221, 221);
     font-weight: bold;
+    letter-spacing: -3px;
 }
 
 .card {
@@ -193,13 +193,13 @@ a:hover {
 }
 
 .iconDesign {
-    font-size: 3.5rem;
     background: -moz-linear-gradient(to right, rgba(218, 36, 49, 1), rgba(122, 67, 151, 1));
     background: -webkit-linear-gradient(to right, rgba(218, 36, 49, 1), rgba(122, 67, 151, 1));
     background: linear-gradient(to right, rgba(218, 36, 49, 1), rgba(122, 67, 151, 1));
+    background-clip: text;
+    font-size: 3.5rem;
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent
 }
 
@@ -212,8 +212,8 @@ a:hover {
 }
 
 .fifthSection {
-    background-color: rgb(254, 203, 78);
     font-size: 2rem;
+    background-color: rgb(254, 203, 78);
 }
 
 .footerSection {
