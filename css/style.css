@@ -16,12 +16,17 @@ body {
 }
 
 h1,
-nav {
+h2,
+h3,
+h4,
+h5,
+nav,
+.brandName {
     font-family: 'Catamaran', 'Helvetica', 'Arial', sans-serif;
 }
 
 button,
-.menülink {
+.menuBurger {
     font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
 }
 
@@ -33,13 +38,9 @@ footer {
     font-family: 'Mulish', 'Helvetica', 'Arial', sans-serif;
 }
 
-
-nav {
-    max-width: 85%;
-}
-
 a {
     color: rgb(100, 100, 100);
+    transition: all 0.3s ease-out;
 }
 
 a:link {
@@ -50,12 +51,92 @@ a:hover {
     color: rgb(253, 204, 82);
 }
 
-.menuItems {}
+.navbar {
+    background-color: rgb(255, 255, 255);
+}
 
-.firstSection, .fourthSection {
+.brandName {
+    color: rgb(253, 204, 82) !important;
+    transition: color .15s ease-in-out;
+    transition-property: color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+.brandName:hover {
+    color: rgb(255, 255, 255) !important;
+}
+
+.menuBurger {
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.menuBurger:hover {
+    color: rgb(212, 212, 212) !important;
+}
+
+.navbar.scrolled {
+    background: rgb(255, 255, 255);
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        background-color: transparent;
+        transition: 300ms ease;
+    }
+
+    .menuBurger {
+        color: rgba(220, 220, 220, 0.5) !important;
+        transition: color .15s ease-in-out;
+        transition-property: color;
+        transition-duration: 0.15s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0s;
+    }
+
+    .menuBurger:hover {
+        color: rgb(255, 255, 255) !important;
+    }
+
+    .menuBurger.scrolled {
+        color: rgba(128, 128, 128, 0.911) !important;
+    }
+
+    .menuBurger.scrolled:hover {
+        color: rgb(253, 204, 82) !important;
+    }
+
+    .brandName.scrolled {
+        color: rgb(0, 0, 0) !important;
+        transition: color .15s ease-in-out;
+        transition-property: color;
+        transition-duration: 0.15s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0s;
+    }
+
+    .brandName.scrolled:hover {
+        color: rgb(253, 204, 82) !important;
+    }
+}
+
+.firstSection,
+.secondSection,
+.thirdSection,
+.fourthSection,
+.fifthSection {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+}
+
+.firstSection,
+.fourthSection {
     font-family: 'Mulish', 'Helvetica', 'Arial', sans-serif;
     font-size: 2rem;
 }
+
 .btnSpecial:hover {
     color: rgb(253, 204, 82);
     border-color: #fdcc52;
@@ -66,7 +147,7 @@ a:hover {
     font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
     border-radius: 25px;
     font-size: .7rem;
-    transition: color .15s ease-in-out,border-color .15s ease-in-out;
+    transition: color .15s ease-in-out, border-color .15s ease-in-out;
     transition-property: color, border-color;
     transition-duration: 0.15s, 0.15s;
     transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
@@ -75,6 +156,26 @@ a:hover {
 
 .imgResize {
     width: 200px;
+}
+
+.imgContainer {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.img1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 47%;
+    border-radius: 5px;
+}
+
+.img2 {
+    position: absolute;
+    z-index: 1;
 }
 
 .secondSection {
@@ -104,8 +205,8 @@ a:hover {
 
 .fourthSection {
     background-image:
-    linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-     url('/img/bg-cta.jpg');
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('/img/bg-cta.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -138,6 +239,7 @@ a:hover {
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
 }
+
 .twitterColor:hover {
     color: rgb(29, 161, 243);
     opacity: 1;
@@ -152,6 +254,7 @@ a:hover {
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
 }
+
 .facebookColor:hover {
     color: rgb(59, 89, 153);
     opacity: 1;
@@ -166,6 +269,7 @@ a:hover {
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
 }
+
 .googleColor:hover {
     color: rgb(221, 76, 57);
     opacity: 1;
@@ -175,4 +279,3 @@ a:hover {
     margin-left: .5rem;
     margin-right: .5rem;
 }
-
